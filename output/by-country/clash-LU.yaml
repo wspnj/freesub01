@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇺 LU 01 - xiaohe
+- name: 🇱🇺 LU 01 - njwsp
   type: vless
   server: 104.21.117.9
   port: 443
@@ -23,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇱🇺 LU 01 - xiaohe
+  - 🇱🇺 LU 01 - njwsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇺 LU 01 - xiaohe
+  - 🇱🇺 LU 01 - njwsp
 rules:
 - MATCH,PROXIES

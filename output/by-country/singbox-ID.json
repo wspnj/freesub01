@@ -6,16 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 ID 01 - xiaohe",
-        "🇮🇩 ID 02 - xiaohe"
+        "🇮🇩 ID 01 - njwsp",
+        "🇮🇩 ID 02 - njwsp"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 ID 01 - xiaohe",
-        "🇮🇩 ID 02 - xiaohe"
+        "🇮🇩 ID 01 - njwsp",
+        "🇮🇩 ID 02 - njwsp"
       ],
       "url": "https://www.google.com/generate_204"
     },

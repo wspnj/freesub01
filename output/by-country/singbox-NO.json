@@ -6,22 +6,28 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇴 NO 01 - xiaohe",
-        "🇳🇴 NO 02 - xiaohe",
-        "🇳🇴 NO 03 - xiaohe",
-        "🇳🇴 NO 04 - xiaohe",
-        "🇳🇴 NO 05 - xiaohe"
+        "🇳🇴 NO 01 - njwsp",
+        "🇳🇴 NO 02 - njwsp",
+        "🇳🇴 NO 03 - njwsp",
+        "🇳🇴 NO 04 - njwsp",
+        "🇳🇴 NO 05 - njwsp",
+        "🇳🇴 NO 06 - njwsp",
+        "🇳🇴 NO 07 - njwsp",
+        "🇳🇴 NO 08 - njwsp"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇴 NO 01 - xiaohe",
-        "🇳🇴 NO 02 - xiaohe",
-        "🇳🇴 NO 03 - xiaohe",
-        "🇳🇴 NO 04 - xiaohe",
-        "🇳🇴 NO 05 - xiaohe"
+        "🇳🇴 NO 01 - njwsp",
+        "🇳🇴 NO 02 - njwsp",
+        "🇳🇴 NO 03 - njwsp",
+        "🇳🇴 NO 04 - njwsp",
+        "🇳🇴 NO 05 - njwsp",
+        "🇳🇴 NO 06 - njwsp",
+        "🇳🇴 NO 07 - njwsp",
+        "🇳🇴 NO 08 - njwsp"
       ],
       "url": "https://www.google.com/generate_204"
     },

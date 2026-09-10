@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇨 SC 01 - xiaohe
+- name: 🇸🇨 SC 01 - njwsp
   type: vmess
   server: 156.226.183.181
   port: 54321
@@ -14,21 +14,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇨 SC 02 - xiaohe
-  type: vless
-  server: 188.114.96.3
-  port: 2087
-  uuid: 756e8f39-04e8-436d-b5c6-905d37d9562c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ez-98919a.motoricb.workers.dev
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiR1BxUFhYR0w1TlBLMTRsIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ
-    headers:
-      Host: ez-98919a.motoricb.workers.dev
-- name: 🇸🇨 SC 03 - xiaohe
+- name: 🇸🇨 SC 02 - njwsp
   type: vless
   server: 45.130.125.96
   port: 443
@@ -42,65 +28,49 @@ proxies:
     path: /id-pusat
     headers:
       Host: dfsuporte.garena.com.ex33r.eu.cc
-- name: 🇸🇨 SC 04 - xiaohe
-  type: vmess
-  server: 156.226.183.181
-  port: 54321
-  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
-  alterId: 0
-  cipher: auto
+- name: 🇸🇨 SC 03 - njwsp
+  type: vless
+  server: 104.21.12.116
+  port: 8880
+  uuid: ed189537-41de-4abe-9f8b-bb75d457722d
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇨 SC 05 - xiaohe
-  type: vless
-  server: 188.114.96.7
-  port: 8443
-  uuid: 362a79a2-ce89-8d2d-355c-f1f5071a445f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fragrant-unit-d662.mmammatrix770088.workers.dev
   network: ws
   ws-opts:
-    path: /sync
+    path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: fragrant-unit-d662.mmammatrix770088.workers.dev
-- name: 🇸🇨 SC 06 - xiaohe
+      Host: lucky-cake-4f58.318-5ee.workers.dev
+- name: 🇸🇨 SC 04 - njwsp
   type: vless
-  server: 172.67.214.106
-  port: 443
-  uuid: a8890c1b-3622-3106-c4be-d8671be32d2b
+  server: 172.67.209.127
+  port: 8880
+  uuid: 1b3ad465-d37e-48a2-bb53-d7fddfc97b11
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: summer-meadow-af5b.woowoorrrkk.workers.dev
   network: ws
   ws-opts:
-    path: /sync
+    path: /
     headers:
-      Host: summer-meadow-af5b.woowoorrrkk.workers.dev
+      Host: calm-silence-d4a1.217.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇨 SC 01 - xiaohe
-  - 🇸🇨 SC 02 - xiaohe
-  - 🇸🇨 SC 03 - xiaohe
-  - 🇸🇨 SC 04 - xiaohe
-  - 🇸🇨 SC 05 - xiaohe
-  - 🇸🇨 SC 06 - xiaohe
+  - 🇸🇨 SC 01 - njwsp
+  - 🇸🇨 SC 02 - njwsp
+  - 🇸🇨 SC 03 - njwsp
+  - 🇸🇨 SC 04 - njwsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇨 SC 01 - xiaohe
-  - 🇸🇨 SC 02 - xiaohe
-  - 🇸🇨 SC 03 - xiaohe
-  - 🇸🇨 SC 04 - xiaohe
-  - 🇸🇨 SC 05 - xiaohe
-  - 🇸🇨 SC 06 - xiaohe
+  - 🇸🇨 SC 01 - njwsp
+  - 🇸🇨 SC 02 - njwsp
+  - 🇸🇨 SC 03 - njwsp
+  - 🇸🇨 SC 04 - njwsp
 rules:
 - MATCH,PROXIES

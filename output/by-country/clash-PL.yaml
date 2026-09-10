@@ -4,11 +4,11 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇱 PL 01 - xiaohe
+- name: 🇵🇱 PL 01 - njwsp
   type: vless
-  server: 94.183.209.59
+  server: 94.183.209.58
   port: 443
-  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
+  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
   udp: true
   tls: false
   skip-cert-verify: true
@@ -16,12 +16,12 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 94.183.209.59
-- name: 🇵🇱 PL 02 - xiaohe
+      Host: pl2.lckdwn.ru
+- name: 🇵🇱 PL 02 - njwsp
   type: vless
-  server: 94.183.209.59
+  server: 94.183.209.58
   port: 443
-  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
+  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
   udp: true
   tls: false
   skip-cert-verify: true
@@ -29,26 +29,31 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 94.183.209.59
-- name: 🇵🇱 PL 03 - xiaohe
+      Host: pl2.lckdwn.ru
+- name: 🇵🇱 PL 03 - njwsp
+  type: ss
+  server: 194.61.121.93
+  port: 7538
+  cipher: chacha20-ietf-poly1305
+  password: U9YAoqBgg5VyGBc6vQv1sN
+  udp: true
+- name: 🇵🇱 PL 04 - njwsp
   type: vless
-  server: 104.25.22.24
-  port: 443
-  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
+  server: 2.26.224.233
+  port: 8443
+  uuid: 758f49d3-5f5f-47e7-bfa4-4ce96faf800d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: khoda.ak-khoda.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: khoda.ak-khoda.workers.dev
-- name: 🇵🇱 PL 04 - xiaohe
+  reality-opts:
+    public-key: NI5Rkfn6zO_gF-UC1nuvJwu4SDakCXh3ygJOKU1EITU
+  servername: cdn.shopify.com
+  client-fingerprint: firefox
+- name: 🇵🇱 PL 05 - njwsp
   type: vless
-  server: 94.183.209.43
+  server: 94.183.209.59
   port: 443
-  uuid: 5e7ecc47-e424-4653-876e-c7515a2c82b4
+  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
   udp: true
   tls: false
   skip-cert-verify: true
@@ -56,8 +61,8 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 94.183.209.43
-- name: 🇵🇱 PL 05 - xiaohe
+      Host: 94.183.209.59
+- name: 🇵🇱 PL 06 - njwsp
   type: vless
   server: 104.17.247.68
   port: 443
@@ -71,14 +76,21 @@ proxies:
     path: /sync
     headers:
       Host: khoda.ak-khoda.workers.dev
-- name: 🇵🇱 PL 06 - xiaohe
-  type: ss
-  server: 194.61.121.93
-  port: 7538
-  cipher: chacha20-ietf-poly1305
-  password: U9YAoqBgg5VyGBc6vQv1sN
+- name: 🇵🇱 PL 07 - njwsp
+  type: vless
+  server: 104.25.22.24
+  port: 443
+  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
   udp: true
-- name: 🇵🇱 PL 07 - xiaohe
+  tls: true
+  skip-cert-verify: true
+  servername: khoda.ak-khoda.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: khoda.ak-khoda.workers.dev
+- name: 🇵🇱 PL 08 - njwsp
   type: vless
   server: 94.183.209.59
   port: 443
@@ -91,32 +103,7 @@ proxies:
     path: /
     headers:
       Host: 94.183.209.59
-- name: 🇵🇱 PL 08 - xiaohe
-  type: vless
-  server: 94.183.209.58
-  port: 443
-  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: pl2.lckdwn.ru
-- name: 🇵🇱 PL 09 - xiaohe
-  type: vless
-  server: 2.26.224.233
-  port: 8443
-  uuid: 758f49d3-5f5f-47e7-bfa4-4ce96faf800d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: NI5Rkfn6zO_gF-UC1nuvJwu4SDakCXh3ygJOKU1EITU
-  servername: cdn.shopify.com
-  client-fingerprint: firefox
-- name: 🇵🇱 PL 10 - xiaohe
+- name: 🇵🇱 PL 09 - njwsp
   type: vless
   server: 104.25.146.77
   port: 443
@@ -130,32 +117,11 @@ proxies:
     path: /sync
     headers:
       Host: khoda.ak-khoda.workers.dev
-- name: 🇵🇱 PL 11 - xiaohe
+- name: 🇵🇱 PL 10 - njwsp
   type: vless
-  server: 172.67.67.178
+  server: 94.183.209.59
   port: 443
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rAyAn-007.nAsTaRaN.DpDnS.OrG
-- name: 🇵🇱 PL 12 - xiaohe
-  type: ss
-  server: 64.176.73.160
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: VJtsgllDDJfNmaTe
-  udp: true
-- name: 🇵🇱 PL 13 - xiaohe
-  type: vless
-  server: 94.183.209.58
-  port: 443
-  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
+  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
   udp: true
   tls: false
   skip-cert-verify: true
@@ -163,42 +129,75 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: pl2.lckdwn.ru
+      Host: 94.183.209.59
+- name: 🇵🇱 PL 11 - njwsp
+  type: vless
+  server: 94.183.209.43
+  port: 443
+  uuid: 5e7ecc47-e424-4653-876e-c7515a2c82b4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.209.43
+- name: 🇵🇱 PL 12 - njwsp
+  type: vless
+  server: 94.183.209.43
+  port: 443
+  uuid: 5e7ecc47-e424-4653-876e-c7515a2c82b4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.209.43
+- name: 🇵🇱 PL 13 - njwsp
+  type: ss
+  server: 64.176.73.160
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: VJtsgllDDJfNmaTe
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇵🇱 PL 01 - xiaohe
-  - 🇵🇱 PL 02 - xiaohe
-  - 🇵🇱 PL 03 - xiaohe
-  - 🇵🇱 PL 04 - xiaohe
-  - 🇵🇱 PL 05 - xiaohe
-  - 🇵🇱 PL 06 - xiaohe
-  - 🇵🇱 PL 07 - xiaohe
-  - 🇵🇱 PL 08 - xiaohe
-  - 🇵🇱 PL 09 - xiaohe
-  - 🇵🇱 PL 10 - xiaohe
-  - 🇵🇱 PL 11 - xiaohe
-  - 🇵🇱 PL 12 - xiaohe
-  - 🇵🇱 PL 13 - xiaohe
+  - 🇵🇱 PL 01 - njwsp
+  - 🇵🇱 PL 02 - njwsp
+  - 🇵🇱 PL 03 - njwsp
+  - 🇵🇱 PL 04 - njwsp
+  - 🇵🇱 PL 05 - njwsp
+  - 🇵🇱 PL 06 - njwsp
+  - 🇵🇱 PL 07 - njwsp
+  - 🇵🇱 PL 08 - njwsp
+  - 🇵🇱 PL 09 - njwsp
+  - 🇵🇱 PL 10 - njwsp
+  - 🇵🇱 PL 11 - njwsp
+  - 🇵🇱 PL 12 - njwsp
+  - 🇵🇱 PL 13 - njwsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇱 PL 01 - xiaohe
-  - 🇵🇱 PL 02 - xiaohe
-  - 🇵🇱 PL 03 - xiaohe
-  - 🇵🇱 PL 04 - xiaohe
-  - 🇵🇱 PL 05 - xiaohe
-  - 🇵🇱 PL 06 - xiaohe
-  - 🇵🇱 PL 07 - xiaohe
-  - 🇵🇱 PL 08 - xiaohe
-  - 🇵🇱 PL 09 - xiaohe
-  - 🇵🇱 PL 10 - xiaohe
-  - 🇵🇱 PL 11 - xiaohe
-  - 🇵🇱 PL 12 - xiaohe
-  - 🇵🇱 PL 13 - xiaohe
+  - 🇵🇱 PL 01 - njwsp
+  - 🇵🇱 PL 02 - njwsp
+  - 🇵🇱 PL 03 - njwsp
+  - 🇵🇱 PL 04 - njwsp
+  - 🇵🇱 PL 05 - njwsp
+  - 🇵🇱 PL 06 - njwsp
+  - 🇵🇱 PL 07 - njwsp
+  - 🇵🇱 PL 08 - njwsp
+  - 🇵🇱 PL 09 - njwsp
+  - 🇵🇱 PL 10 - njwsp
+  - 🇵🇱 PL 11 - njwsp
+  - 🇵🇱 PL 12 - njwsp
+  - 🇵🇱 PL 13 - njwsp
 rules:
 - MATCH,PROXIES

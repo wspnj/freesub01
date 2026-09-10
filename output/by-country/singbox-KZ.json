@@ -6,20 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 KZ 01 - xiaohe",
-        "🇰🇿 KZ 02 - xiaohe",
-        "🇰🇿 KZ 03 - xiaohe",
-        "🇰🇿 KZ 04 - xiaohe"
+        "🇰🇿 KZ 01 - njwsp",
+        "🇰🇿 KZ 02 - njwsp",
+        "🇰🇿 KZ 03 - njwsp",
+        "🇰🇿 KZ 04 - njwsp"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 KZ 01 - xiaohe",
-        "🇰🇿 KZ 02 - xiaohe",
-        "🇰🇿 KZ 03 - xiaohe",
-        "🇰🇿 KZ 04 - xiaohe"
+        "🇰🇿 KZ 01 - njwsp",
+        "🇰🇿 KZ 02 - njwsp",
+        "🇰🇿 KZ 03 - njwsp",
+        "🇰🇿 KZ 04 - njwsp"
       ],
       "url": "https://www.google.com/generate_204"
     },
