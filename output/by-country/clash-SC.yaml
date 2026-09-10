@@ -5,33 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - njwsp
-  type: vless
-  server: 172.67.130.187
-  port: 2083
-  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
+  type: vmess
+  server: 156.226.183.181
+  port: 54321
+  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: fans.liverpool.qzz.io
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiY0Y0cENQUmxsNyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: fans.liverpool.qzz.io
 - name: 🇸🇨 SC 02 - njwsp
   type: vless
-  server: 104.21.14.116
+  server: 188.114.97.6
   port: 443
-  uuid: 566c0473-382e-aabb-c62a-f5bb00000000
+  uuid: b0962bf7-0b03-4353-9be1-131b78ad71d0
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ez-4b5fd4.appelidmymat.workers.dev
+  servername: weathered-truth-581a.383.workers.dev
   network: ws
   ws-opts:
-    path: /sync
+    path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: ez-4b5fd4.appelidmymat.workers.dev
+      Host: weathered-truth-581a.383.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
