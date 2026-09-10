@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇿 UZ 01 - njwsp"
+        "🇺🇿 UZ 01 - njwsp",
+        "🇺🇿 UZ 02 - njwsp"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇿 UZ 01 - njwsp"
+        "🇺🇿 UZ 01 - njwsp",
+        "🇺🇿 UZ 02 - njwsp"
       ],
       "url": "https://www.google.com/generate_204"
     },
