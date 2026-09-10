@@ -14,15 +14,15 @@ proxies:
 - name: 🇰🇷 韩国 (South Korea) 02 - njwsp
   type: ss
   server: 141.164.45.187
-  port: 8888
+  port: 9101
   cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
+  password: e4FCWrgpkji3QY
   udp: true
 - name: 🇰🇷 韩国 (South Korea) 03 - njwsp
   type: vless
-  server: 104.17.21.32
+  server: 172.64.88.251
   port: 8880
-  uuid: 91c7ea79-9187-4f07-ab97-68c584186843
+  uuid: 87a5d3eb-afd4-4193-9787-c54ef7c26c8c
   udp: true
   tls: false
   skip-cert-verify: true
@@ -30,8 +30,27 @@ proxies:
   ws-opts:
     path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: nameless-dust-1a36.207-b50.workers.dev
+      Host: patient-cake-39c7.44-e7a.workers.dev
 - name: 🇰🇷 韩国 (South Korea) 04 - njwsp
+  type: vless
+  server: 3.34.197.128
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A3NXnUIT-W0m1Y_leRnv5so2IeCvk9FCFgL31PulfTw
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 05 - njwsp
+  type: ss
+  server: 141.164.45.187
+  port: 5001
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 06 - njwsp
   type: vmess
   server: 140.238.2.250
   port: 443
@@ -41,55 +60,45 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 05 - njwsp
-  type: vless
-  server: 172.66.170.53
-  port: 8880
-  uuid: 38ede46b-d237-4c76-9de1-a10738642adc
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: summer-hat-ba5c.430.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 06 - njwsp
-  type: ss
-  server: 141.164.45.187
-  port: 5001
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
 - name: 🇰🇷 韩国 (South Korea) 07 - njwsp
-  type: ss
-  server: 141.164.45.187
-  port: 9090
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 08 - njwsp
   type: ss
   server: 141.164.45.187
   port: 8119
   cipher: aes-256-gcm
   password: cdBIDV42DCwnfIN
   udp: true
+- name: 🇰🇷 韩国 (South Korea) 08 - njwsp
+  type: ss
+  server: 141.164.45.187
+  port: 6697
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+  udp: true
 - name: 🇰🇷 韩国 (South Korea) 09 - njwsp
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 10 - njwsp
   type: ss
   server: 141.164.45.187
   port: 7002
   cipher: aes-256-gcm
   password: RexnBgU7EV5ADxG
   udp: true
-- name: 🇰🇷 韩国 (South Korea) 10 - njwsp
+- name: 🇰🇷 韩国 (South Korea) 11 - njwsp
   type: ss
   server: 141.164.45.187
-  port: 8008
+  port: 5498
   cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
+  password: lGqs95QkFHo2NV
   udp: true
-- name: 🇰🇷 韩国 (South Korea) 11 - njwsp
+- name: 🇰🇷 韩国 (South Korea) 12 - njwsp
   type: vless
   server: 119.28.161.143
   port: 443
@@ -101,7 +110,14 @@ proxies:
     public-key: pR7MPTAA4cZsW9AO-twMzuogiWGMKPiheTg70fcWWWs
   servername: apple.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 12 - njwsp
+- name: 🇰🇷 韩国 (South Korea) 13 - njwsp
+  type: ss
+  server: 141.164.45.187
+  port: 5498
+  cipher: aes-256-gcm
+  password: lGqs95QkFHo2NV
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 14 - njwsp
   type: vless
   server: 172.64.88.251
   port: 8880
@@ -114,30 +130,6 @@ proxies:
     path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
       Host: dry-credit-fc26.203-d8c.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 13 - njwsp
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
-- name: 🇰🇷 韩国 (South Korea) 14 - njwsp
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 15 - njwsp
   type: vless
   server: 3.34.197.128
@@ -152,49 +144,9 @@ proxies:
   client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 16 - njwsp
   type: vless
-  server: 172.64.53.60
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇰🇷 韩国 (South Korea) 17 - njwsp
-  type: ss
-  server: 141.164.45.187
-  port: 6697
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 18 - njwsp
-  type: vless
-  server: 3.34.197.128
-  port: 8686
-  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A3NXnUIT-W0m1Y_leRnv5so2IeCvk9FCFgL31PulfTw
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 19 - njwsp
-  type: ss
-  server: 141.164.45.187
-  port: 9090
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 20 - njwsp
-  type: vless
-  server: 172.64.88.251
+  server: 172.66.170.53
   port: 8880
-  uuid: 87a5d3eb-afd4-4193-9787-c54ef7c26c8c
+  uuid: 38ede46b-d237-4c76-9de1-a10738642adc
   udp: true
   tls: false
   skip-cert-verify: true
@@ -202,21 +154,8 @@ proxies:
   ws-opts:
     path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: patient-cake-39c7.44-e7a.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 21 - njwsp
-  type: vless
-  server: 130.94.29.111
-  port: 2087
-  uuid: 84da6391-1539-4583-a3d9-d6efd796b4d6
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /e17586a75123
-    headers:
-      Host: 130.94.29.111
-- name: 🇰🇷 韩国 (South Korea) 22 - njwsp
+      Host: summer-hat-ba5c.430.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 17 - njwsp
   type: vmess
   server: 146.56.112.110
   port: 8888
@@ -226,19 +165,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 23 - njwsp
-  type: vless
-  server: 130.94.29.111
-  port: 2087
-  uuid: 84da6391-1539-4583-a3d9-d6efd796b4d6
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /e17586a75123
-    headers:
-      Host: 130.94.29.111
 proxy-groups:
 - name: PROXIES
   type: select
@@ -261,12 +187,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 15 - njwsp
   - 🇰🇷 韩国 (South Korea) 16 - njwsp
   - 🇰🇷 韩国 (South Korea) 17 - njwsp
-  - 🇰🇷 韩国 (South Korea) 18 - njwsp
-  - 🇰🇷 韩国 (South Korea) 19 - njwsp
-  - 🇰🇷 韩国 (South Korea) 20 - njwsp
-  - 🇰🇷 韩国 (South Korea) 21 - njwsp
-  - 🇰🇷 韩国 (South Korea) 22 - njwsp
-  - 🇰🇷 韩国 (South Korea) 23 - njwsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -289,11 +209,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 15 - njwsp
   - 🇰🇷 韩国 (South Korea) 16 - njwsp
   - 🇰🇷 韩国 (South Korea) 17 - njwsp
-  - 🇰🇷 韩国 (South Korea) 18 - njwsp
-  - 🇰🇷 韩国 (South Korea) 19 - njwsp
-  - 🇰🇷 韩国 (South Korea) 20 - njwsp
-  - 🇰🇷 韩国 (South Korea) 21 - njwsp
-  - 🇰🇷 韩国 (South Korea) 22 - njwsp
-  - 🇰🇷 韩国 (South Korea) 23 - njwsp
 rules:
 - MATCH,PROXIES

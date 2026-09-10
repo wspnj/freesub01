@@ -5,55 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - njwsp
-  type: vmess
-  server: 156.226.183.181
-  port: 54321
-  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇨 SC 02 - njwsp
   type: vless
-  server: 45.130.125.96
-  port: 443
-  uuid: 28607fa7-db30-47d6-942a-f5744e4be9ad
+  server: 172.67.130.187
+  port: 2083
+  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: dfsuporte.garena.com.ex33r.eu.cc
+  servername: fans.liverpool.qzz.io
   network: ws
   ws-opts:
-    path: /id-pusat
+    path: /eyJqdW5rIjoiY0Y0cENQUmxsNyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: dfsuporte.garena.com.ex33r.eu.cc
-- name: 🇸🇨 SC 03 - njwsp
+      Host: fans.liverpool.qzz.io
+- name: 🇸🇨 SC 02 - njwsp
   type: vless
-  server: 104.21.12.116
-  port: 8880
-  uuid: ed189537-41de-4abe-9f8b-bb75d457722d
+  server: 104.21.14.116
+  port: 443
+  uuid: 566c0473-382e-aabb-c62a-f5bb00000000
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ez-4b5fd4.appelidmymat.workers.dev
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
+    path: /sync
     headers:
-      Host: lucky-cake-4f58.318-5ee.workers.dev
-- name: 🇸🇨 SC 04 - njwsp
-  type: vless
-  server: 172.67.209.127
-  port: 8880
-  uuid: 1b3ad465-d37e-48a2-bb53-d7fddfc97b11
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: calm-silence-d4a1.217.workers.dev
+      Host: ez-4b5fd4.appelidmymat.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,8 +39,6 @@ proxy-groups:
   - AUTO
   - 🇸🇨 SC 01 - njwsp
   - 🇸🇨 SC 02 - njwsp
-  - 🇸🇨 SC 03 - njwsp
-  - 🇸🇨 SC 04 - njwsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -70,7 +46,5 @@ proxy-groups:
   proxies:
   - 🇸🇨 SC 01 - njwsp
   - 🇸🇨 SC 02 - njwsp
-  - 🇸🇨 SC 03 - njwsp
-  - 🇸🇨 SC 04 - njwsp
 rules:
 - MATCH,PROXIES
