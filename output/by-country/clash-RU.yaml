@@ -6,12 +6,33 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - njwsp
   type: ss
-  server: 195.58.48.137
-  port: 20111
+  server: 46.17.42.166
+  port: 10661
   cipher: aes-256-gcm
-  password: 8ad9d72a5571df86
+  password: 6b39ae3234dfd68b
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - njwsp
+  type: ss
+  server: 46.17.40.234
+  port: 2011
+  cipher: aes-256-gcm
+  password: bdb313adf74c2ede
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 03 - njwsp
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: /63vp7pdl1GXaTpa6kkWd2+3tq3/szSAWueVKo26xM8=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - njwsp
+  type: ss
+  server: 195.133.23.200
+  port: 20111
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 05 - njwsp
   type: vless
   server: 46.8.200.91
   port: 443
@@ -25,41 +46,6 @@ proxies:
     path: /casc
     headers:
       Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 03 - njwsp
-  type: ss
-  server: 194.87.196.13
-  port: 20111
-  cipher: aes-256-gcm
-  password: 4938e975724d0ed1
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - njwsp
-  type: ss
-  server: 46.17.40.234
-  port: 2011
-  cipher: aes-256-gcm
-  password: bdb313adf74c2ede
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - njwsp
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: /63vp7pdl1GXaTpa6kkWd2+3tq3/szSAWueVKo26xM8=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - njwsp
-  type: ss
-  server: 195.133.23.200
-  port: 20111
-  cipher: aes-256-gcm
-  password: 81a20429165df87e
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 07 - njwsp
-  type: ss
-  server: 193.233.219.99
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: wwtX18u5mn8AGxTHwLw_iF_21gNppe5a
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -70,8 +56,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - njwsp
   - 🇷🇺 俄罗斯 (Russia) 04 - njwsp
   - 🇷🇺 俄罗斯 (Russia) 05 - njwsp
-  - 🇷🇺 俄罗斯 (Russia) 06 - njwsp
-  - 🇷🇺 俄罗斯 (Russia) 07 - njwsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -82,7 +66,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - njwsp
   - 🇷🇺 俄罗斯 (Russia) 04 - njwsp
   - 🇷🇺 俄罗斯 (Russia) 05 - njwsp
-  - 🇷🇺 俄罗斯 (Russia) 06 - njwsp
-  - 🇷🇺 俄罗斯 (Russia) 07 - njwsp
 rules:
 - MATCH,PROXIES
