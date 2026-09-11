@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 TH 01 - njwsp"
+        "🇹🇭 TH 01 - njwsp",
+        "🇹🇭 TH 02 - njwsp",
+        "🇹🇭 TH 03 - njwsp"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 TH 01 - njwsp"
+        "🇹🇭 TH 01 - njwsp",
+        "🇹🇭 TH 02 - njwsp",
+        "🇹🇭 TH 03 - njwsp"
       ],
       "url": "https://www.google.com/generate_204"
     },

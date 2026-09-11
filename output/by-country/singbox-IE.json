@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇮🇪 IE 01 - njwsp",
+        "🇮🇪 IE 02 - njwsp",
+        "🇮🇪 IE 03 - njwsp"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇮🇪 IE 01 - njwsp",
+        "🇮🇪 IE 02 - njwsp",
+        "🇮🇪 IE 03 - njwsp"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

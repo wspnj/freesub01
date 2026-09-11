@@ -5,39 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - njwsp
-  type: ss
-  server: 194.77.229.56
-  port: 12007
-  cipher: chacha20-ietf-poly1305
-  password: 1ed0af1c413861ff
-  udp: true
-- name: 🇦🇪 阿联酋 (UAE) 02 - njwsp
   type: vless
-  server: 210.152.85.154
-  port: 19364
-  uuid: 2a731bb4-6c55-40ef-8c8d-80969db19e08
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /
     headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - njwsp
-  - 🇦🇪 阿联酋 (UAE) 02 - njwsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - njwsp
-  - 🇦🇪 阿联酋 (UAE) 02 - njwsp
 rules:
 - MATCH,PROXIES

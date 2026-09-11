@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - njwsp
+  type: ss
+  server: 57.131.48.45
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
+- name: 🇮🇹 意大利 (Italy) 02 - njwsp
+  type: ss
+  server: 57.131.48.45
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
+- name: 🇮🇹 意大利 (Italy) 03 - njwsp
   type: vless
   server: 204.216.216.23
   port: 10086
@@ -12,7 +26,20 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 02 - njwsp
+- name: 🇮🇹 意大利 (Italy) 04 - njwsp
+  type: vless
+  server: 57.131.32.191
+  port: 80
+  uuid: 1e280316-0408-47c4-b058-05b8f1f17f02
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-italy1.09vpn.com
+- name: 🇮🇹 意大利 (Italy) 05 - njwsp
   type: vless
   server: 57.131.38.163
   port: 2053
@@ -24,20 +51,6 @@ proxies:
     public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 03 - njwsp
-  type: ss
-  server: 57.131.48.45
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 04 - njwsp
-  type: ss
-  server: 57.131.48.45
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,6 +60,7 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 02 - njwsp
   - 🇮🇹 意大利 (Italy) 03 - njwsp
   - 🇮🇹 意大利 (Italy) 04 - njwsp
+  - 🇮🇹 意大利 (Italy) 05 - njwsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -56,5 +70,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 02 - njwsp
   - 🇮🇹 意大利 (Italy) 03 - njwsp
   - 🇮🇹 意大利 (Italy) 04 - njwsp
+  - 🇮🇹 意大利 (Italy) 05 - njwsp
 rules:
 - MATCH,PROXIES
