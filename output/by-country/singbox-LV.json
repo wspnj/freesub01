@@ -6,20 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇻 LV 01 - njwsp",
-        "🇱🇻 LV 02 - njwsp",
-        "🇱🇻 LV 03 - njwsp",
-        "🇱🇻 LV 04 - njwsp"
+        "🇱🇻 LV 01 - njwsp"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇻 LV 01 - njwsp",
-        "🇱🇻 LV 02 - njwsp",
-        "🇱🇻 LV 03 - njwsp",
-        "🇱🇻 LV 04 - njwsp"
+        "🇱🇻 LV 01 - njwsp"
       ],
       "url": "https://www.google.com/generate_204"
     },
