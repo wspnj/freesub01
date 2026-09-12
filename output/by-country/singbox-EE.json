@@ -6,14 +6,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 EE 01 - njwsp"
+        "🇪🇪 EE 01 - njwsp",
+        "🇪🇪 EE 02 - njwsp",
+        "🇪🇪 EE 03 - njwsp",
+        "🇪🇪 EE 04 - njwsp",
+        "🇪🇪 EE 05 - njwsp"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 EE 01 - njwsp"
+        "🇪🇪 EE 01 - njwsp",
+        "🇪🇪 EE 02 - njwsp",
+        "🇪🇪 EE 03 - njwsp",
+        "🇪🇪 EE 04 - njwsp",
+        "🇪🇪 EE 05 - njwsp"
       ],
       "url": "https://www.google.com/generate_204"
     },

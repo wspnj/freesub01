@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇪 SE 01 - njwsp
+- name: 🇸🇦 SA 01 - njwsp
   type: vless
-  server: 185.178.208.176
-  port: 443
-  uuid: f07eb014-f811-4f81-9b15-b213caaeed7c
+  server: 81.208.170.142
+  port: 1500
+  uuid: e332f028-d343-5b44-8016-b3130f39e133
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: founders-blog.online
-  network: ws
-  ws-opts:
-    path: /stream/615428/socket
-    headers:
-      Host: founders-blog.online
+  reality-opts:
+    public-key: VQxVgczORkbSNdDrkNOYs6zMBINpViztTKDuWCeQsVE
+  servername: www.ebay.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇪 SE 01 - njwsp
+  - 🇸🇦 SA 01 - njwsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇪 SE 01 - njwsp
+  - 🇸🇦 SA 01 - njwsp
 rules:
 - MATCH,PROXIES
