@@ -6,18 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 IE 01 - njwsp",
-        "🇮🇪 IE 02 - njwsp",
-        "🇮🇪 IE 03 - njwsp"
+        "🇨🇭 CH 01 - njwsp"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 IE 01 - njwsp",
-        "🇮🇪 IE 02 - njwsp",
-        "🇮🇪 IE 03 - njwsp"
+        "🇨🇭 CH 01 - njwsp"
       ],
       "url": "https://www.google.com/generate_204"
     },
