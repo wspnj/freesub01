@@ -6,27 +6,75 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - njwsp
   type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: 7dc78e93-9c9f-4a38-823b-13df709a1d16
+  server: 45.130.125.201
+  port: 80
+  uuid: dc8a9493-c54a-459e-d060-81a700000001
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: nahan-core.netizo09.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 02 - njwsp
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 03 - njwsp
+  type: vless
+  server: 116.204.164.17
+  port: 7443
+  uuid: 57c830ca-19a2-441c-811d-db5d81b86b47
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
+  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 04 - njwsp
+  type: vless
+  server: 45.77.241.190
+  port: 8441
+  uuid: b3ddac6f-b2b7-43a6-bd69-413013f30040
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - njwsp
+  - 🇦🇪 阿联酋 (UAE) 02 - njwsp
+  - 🇦🇪 阿联酋 (UAE) 03 - njwsp
+  - 🇦🇪 阿联酋 (UAE) 04 - njwsp
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - njwsp
+  - 🇦🇪 阿联酋 (UAE) 02 - njwsp
+  - 🇦🇪 阿联酋 (UAE) 03 - njwsp
+  - 🇦🇪 阿联酋 (UAE) 04 - njwsp
 rules:
 - MATCH,PROXIES

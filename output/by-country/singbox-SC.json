@@ -6,14 +6,38 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 SC 01 - njwsp"
+        "🇸🇨 SC 01 - njwsp",
+        "🇸🇨 SC 02 - njwsp",
+        "🇸🇨 SC 03 - njwsp",
+        "🇸🇨 SC 04 - njwsp",
+        "🇸🇨 SC 05 - njwsp",
+        "🇸🇨 SC 06 - njwsp",
+        "🇸🇨 SC 07 - njwsp",
+        "🇸🇨 SC 08 - njwsp",
+        "🇸🇨 SC 09 - njwsp",
+        "🇸🇨 SC 10 - njwsp",
+        "🇸🇨 SC 11 - njwsp",
+        "🇸🇨 SC 12 - njwsp",
+        "🇸🇨 SC 13 - njwsp"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 SC 01 - njwsp"
+        "🇸🇨 SC 01 - njwsp",
+        "🇸🇨 SC 02 - njwsp",
+        "🇸🇨 SC 03 - njwsp",
+        "🇸🇨 SC 04 - njwsp",
+        "🇸🇨 SC 05 - njwsp",
+        "🇸🇨 SC 06 - njwsp",
+        "🇸🇨 SC 07 - njwsp",
+        "🇸🇨 SC 08 - njwsp",
+        "🇸🇨 SC 09 - njwsp",
+        "🇸🇨 SC 10 - njwsp",
+        "🇸🇨 SC 11 - njwsp",
+        "🇸🇨 SC 12 - njwsp",
+        "🇸🇨 SC 13 - njwsp"
       ],
       "url": "https://www.google.com/generate_204"
     },

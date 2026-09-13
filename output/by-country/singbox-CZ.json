@@ -6,14 +6,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 CZ 01 - njwsp"
+        "🇨🇿 CZ 01 - njwsp",
+        "🇨🇿 CZ 02 - njwsp",
+        "🇨🇿 CZ 03 - njwsp",
+        "🇨🇿 CZ 04 - njwsp",
+        "🇨🇿 CZ 05 - njwsp"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 CZ 01 - njwsp"
+        "🇨🇿 CZ 01 - njwsp",
+        "🇨🇿 CZ 02 - njwsp",
+        "🇨🇿 CZ 03 - njwsp",
+        "🇨🇿 CZ 04 - njwsp",
+        "🇨🇿 CZ 05 - njwsp"
       ],
       "url": "https://www.google.com/generate_204"
     },
